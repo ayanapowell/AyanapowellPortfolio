@@ -1,0 +1,90 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	width: 100%;
+	/* We want the width to be 100% of the element its inside */
+	margin: 0 auto;
+	/*We set margin 0 auto on it, to always center it*/
+	object-fit: cover;
+
+	
+}
+
+body {
+  width: 100%; 
+  left: 0;
+  font-size: 62.5;
+  background-color: #E8E8E8;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+.wrapper,
+.wrapper img {
+	height: 800px;
+}
+
+section {
+	width: 50%;
+}
+
+.glyphicon-home {
+	position: absolute;
+	margin: 25px;
+	font-size: 27px;
+	color: #999999;
+	padding: 5px;
+}
+
+.glyphicon-home:hover {
+	border: solid 0.5px #f2f2f2;
+	background-color: #f2f2f2;
+}
+
+.title {
+	font-family: 'Lato','sans-serif';
+	font-weight: 900;
+	margin-left: 20%;
+
+}
+
+h1.title {
+	margin-top: 28%;
+	font-size: 2.5em;
+	font-weight: 700;
+	color: #ff0000;
+}
+
+h2.title {
+	font-size: 3.6em;
+}
+
+
+p {
+	font-family: 'Lato', 'sans-serif';
+	font-size: 1.5em;
+	font-weight: 100;
+	margin-left: 20%;
+}
+
+
+.email {
+	margin-top: 5%;
+}
+
+
+
+
+
+
+

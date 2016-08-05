@@ -24,6 +24,16 @@ body {
   background-color: #E8E8E8;
 }
 
+a {
+	text-decoration: none;
+}
+
+p {
+	font-family: 'Lora', sans-serif;
+	font-style: italic;
+	font-size: 1.4em;
+}
+
  #wrapper {
  	width: 100%;
  	height: 800px;
@@ -49,25 +59,29 @@ body {
 	position: absolute;
 	font-family: 'Playfair Display', serif;
 	color: white;
-	margin-left: 60px;
 	z-index: 4;
 }
 
 h1.title {
+	width: 20%;
+	margin-left: 40%;
+	margin-top: 20%;
 	font-size: 3.0em;
 	font-weight: 700;
 	letter-spacing: .5px;
-	margin-top: 50px;
 }
 
 h2.title {
+	width: 18%;
+	margin-left: 40.5%;
+	margin-top: 25%;
 	font-size: 1.2em;
 	font-weight: 300;
 	letter-spacing: .5px;
 	color: #ecf0f1;
 	font-weight: 100;
-	margin-top: 118px;
 }
+
 
 
 /* ---------- profile and social icons ------ */
@@ -120,7 +134,7 @@ h2.title {
 	border-width: 0.5px;
 	border-color: #D0D0D0;
 	padding: 20px;
-}
+} 
 
 
 
