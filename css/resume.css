@@ -74,7 +74,8 @@ h2 {
 	width: 200px;
 }
 
-ul {
+ul,
+ol {
 	border-bottom: solid 0.5px #f2f2f2;
 	border-right: solid 0.5px #f2f2f2;
 	box-shadow: 2px 2px #f2f2f2;
@@ -86,7 +87,7 @@ ul {
 	padding-left: 90px;
 }
 
-.work,
+.work ol
 .skills ul {
 	padding: 40px;
 }
