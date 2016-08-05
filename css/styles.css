@@ -71,6 +71,7 @@ p {
 	display: inline-flex;
 	position: absolute;
 	margin-top: 25%;
+	margin-left: 5%;
 	margin-right: 25%;
 	z-index: 4;
 	width: 30%;
@@ -80,25 +81,13 @@ p {
 .link_2 a {
 	text-decoration: none;
 	color: #f2f2f2;
+	text-shadow: 1px 1px #ff3333;
 }
 
 .link_1 a:hover,
 .link_2 a:hover {
 	text-decoration: none;
-	color: #ff0000;
-}
-
-
-.fa-long-arrow-left {
-	margin-left: 25px;
-	margin-right: 5px;
-	color: #ff0000;
-}
-
-.fa-long-arrow-right {
-	color: #ff0000;
-	margin-right: 50%;
-	margin-left: 33%;
+	color: #ff3333;
 }
 
 .title {
@@ -117,6 +106,7 @@ h1.title {
 }
 
 h2.title {
+	text-shadow: 0.5px 0.5px #ff3333;
 	margin-left: 40.5%;
 	margin-top: 24%;
 	font-size: 1.2em;
