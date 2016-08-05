@@ -53,6 +53,7 @@ div .row {
 
 .jumbotron h1:hover {
 	color: red;
+	text-decoration: underline;
 }
 
 .jumbotron p {
@@ -87,8 +88,9 @@ ol {
 	padding-left: 90px;
 }
 
-.work ol
-.skills ul {
+.work ol,
+.skills ul,
+.projects ul {
 	padding: 40px;
 }
 
