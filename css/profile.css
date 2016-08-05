@@ -128,7 +128,8 @@ h2.title {
 }
 
 .link_to {
-	padding: 37%;
+	padding-top: 50%;
+	padding-left: 37%;
 }
 
 .link_to h3 {
