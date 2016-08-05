@@ -24,6 +24,11 @@ strong {
 	font-weight: 400;
 }
 
+a,
+a:hover {
+	text-decoration: none;
+}
+
 p {
 	font-family:'Muli', sans-serif;
 	font-size: 1.0em;
@@ -36,16 +41,31 @@ div .row {
 
 .jumbotron {
 	margin-bottom: 100px;
+	display: inline-flex;
 }
 
 .jumbotron h1 {
-	margin-left: 60px;
-	padding-left: 30px;
+	margin-left: 90px;
 	color: #ff3333;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 }
 
+.jumbotron h1:hover {
+	color: red;
+}
+
+.jumbotron p {
+	font-size: .9em;
+	letter-spacing: 1px;
+	margin-left: 100px;
+	margin-bottom: 0;
+	padding-top: 10px;
+}
+
+.glyphicon-home:hover {
+	background-color: white;
+}
 
 h2 {
 	padding: 5px;
