@@ -1,0 +1,131 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	width: 100%;
+	/* We want the width to be 100% of the element its inside */
+	margin: 0 auto;
+	/*We set margin 0 auto on it, to always center it*/
+	object-fit: cover;
+
+	
+}
+
+body {
+  width: 100%; 
+  left: 0;
+  font-size: 62.5;
+  background-color: #E8E8E8;
+}
+
+ #wrapper {
+ 	width: 100%;
+ 	height: 800px;
+ }
+
+/*------- Introduction ----*/
+.background_image {
+	width: 100%;
+	max-height: 800px;
+	height:800px;
+	background: rgba(0, 0, 0, 0.4);
+	z-index: 1;
+}
+
+.background_image img {
+	position: absolute;
+	height: 800px;
+	-webkit-filter: blur(2px);
+	z-index: -1;
+}
+
+.title {
+	position: absolute;
+	font-family: 'Playfair Display', serif;
+	color: white;
+	margin-left: 60px;
+	z-index: 4;
+}
+
+h1.title {
+	font-size: 3.0em;
+	font-weight: 700;
+	letter-spacing: .5px;
+	margin-top: 50px;
+}
+
+h2.title {
+	font-size: 1.2em;
+	font-weight: 300;
+	letter-spacing: .5px;
+	color: #ecf0f1;
+	font-weight: 100;
+	margin-top: 118px;
+}
+
+
+/* ---------- profile and social icons ------ */
+
+.icons {
+	position: absolute;
+	display: inline-flex;
+	margin-left: 75%;
+	margin-top: 5%;
+	z-index: 5;
+
+}
+
+.icon a {
+	text-decoration: none;
+}
+
+.icons a.profile {
+	text-decoration: none;
+	font-family:'Slabo 27px', serif;
+	font-weight: 100;
+	letter-spacing: 1px;
+	color: white;
+	font-size: 1.0em;
+	text-transform: uppercase;	
+}
+
+.profile {
+	border-style: solid;
+	border-width: 0.5px;
+	border-color: #D0D0D0;
+	border-right-width: 0px;
+	padding: 17px;
+}
+
+.fa-envelope-o,
+.fa-instagram {
+	color: #D0D0D0;
+	border-style: solid;
+	border-width: 0.5px;
+	border-color: #D0D0D0;
+	border-right-width: 0px;
+	padding: 20px;
+
+}
+
+.fa-facebook {
+	color: #D0D0D0;
+	border-style: solid;
+	border-width: 0.5px;
+	border-color: #D0D0D0;
+	padding: 20px;
+}
+
+
+
+
+
+
+
+
