@@ -13,8 +13,6 @@ img {
 	margin: 0 auto;
 	/*We set margin 0 auto on it, to always center it*/
 	object-fit: cover;
-
-	
 }
 
 body {
@@ -28,8 +26,6 @@ a,
 a:hover {
 	text-decoration: none;
 }
-
-
 
 p {
 	font-family: 'Lato', 'sans-serif';
@@ -68,9 +64,6 @@ section {
 	margin-top: 5%;
 }
 
-.container {
-}
-
 .container h1 {
 	margin-top: 15%;
 	color: #ff3333;
@@ -83,19 +76,18 @@ section {
 	margin-top: 0;
 }
 
-h2.title{
+h2.title {
 	font-size: 3.6em;
 }
 
 /* ------ Section 2 with floats ---- */
-
 
 .section_1 .glyphicon-home {
 	margin-top: 35px;
 	padding: 15px;
 }
 
-.section_1{
+.section_1 {
 	width: 50%;
 	height: 100%;
 	float: left;
@@ -133,7 +125,6 @@ h2.title{
 	margin-left: 15%;
 	padding-right: 50px;
 	float: right;
-
 }
 
 .link_to {
@@ -153,7 +144,7 @@ h2.title{
 
 .link_to a:hover {
 	color: #990000;
-	text-decoration:none;
+	text-decoration: none;
 }
 
 
