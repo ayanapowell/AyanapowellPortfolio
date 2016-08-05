@@ -76,6 +76,26 @@ ul {
 	padding-bottom: 20px;
 }
 
+/* ---- Social Icons --- */
+.icons {
+	width: 19.5%;
+	margin-left:40.25%;
+	display: inline-flex;
+	padding-bottom: 60px;
+}
+
+.icon a {
+	text-decoration: none;
+}
+
+.fa-envelope-o,
+.fa-instagram,
+.fa-github,
+.fa-facebook {
+	color: #8c8c8c;
+	padding: 20px;
+
+}
 
 
 
