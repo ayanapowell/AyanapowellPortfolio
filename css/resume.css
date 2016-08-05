@@ -108,6 +108,13 @@ ul {
 	text-decoration: none;
 }
 
+.fa-envelope-o:hover,
+.fa-instagram:hover,
+.fa-github:hover,
+.fa-facebook:hover {
+	color: black;
+}
+
 .fa-envelope-o,
 .fa-instagram,
 .fa-github,
@@ -116,6 +123,8 @@ ul {
 	padding: 20px;
 
 }
+
+
 
 
 

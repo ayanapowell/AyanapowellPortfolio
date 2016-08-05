@@ -13,8 +13,6 @@ img {
 	margin: 0 auto;
 	/*We set margin 0 auto on it, to always center it*/
 	object-fit: cover;
-
-	
 }
 
 body {
@@ -37,7 +35,7 @@ a {
 .background_image {
 	width: 100%;
 	max-height: 800px;
-	height:800px;
+	height: 800px;
 	background: rgba(0, 0, 0, 0.6);
 	z-index: 1;
 }
@@ -79,36 +77,31 @@ p {
 
 .link_1 a,
 .link_2 a {
-	text-decoration: none;
 	color: #f2f2f2;
-	text-shadow: 1px 1px #ff3333;
 }
 
-.link_1 a:hover,
-.link_2 a:hover {
-	text-decoration: none;
+em {
 	color: #ff3333;
 }
 
 .title {
 	position: absolute;
-	font-family: 'Playfair Display', serif;
+	font-family: 'Montserrat', sans-serif;
 	color: #f2f2f2;
 	z-index: 4;
 }
 
 h1.title {
-	margin-left: 40%;
-	margin-top: 18%;
-	font-size: 3.0em;
+	margin-left: 27%;
+	margin-top: 22%;
+	font-size: 7.0em;
 	font-weight: 700;
 	letter-spacing: .5px;
 }
 
 h2.title {
-	text-shadow: 0.5px 0.5px #ff3333;
-	margin-left: 40.5%;
-	margin-top: 24%;
+	margin-left: 5%;
+	margin-top: 10%;
 	font-size: 1.2em;
 	font-weight: 100;
 	letter-spacing: 1px;
@@ -119,13 +112,13 @@ h2.title {
 
 
 
-/* ---------- profile and social icons ------ */
+/* ---------- social icons ------ */
 
 .icons {
 	position: absolute;
 	display: inline-flex;
-	margin-left: 75%;
-	margin-top: 5%;
+	margin-left: 42%;
+	margin-top: 2%;
 	z-index: 5;
 }
 
@@ -139,13 +132,11 @@ h2.title {
 .fa-facebook {
 	color: #D0D0D0;
 	padding: 20px;
-
 }
 
-
-
-
-
-
-
-
+.fa-envelope-o:hover,
+.fa-instagram:hover,
+.fa-github:hover,
+.fa-facebook:hover {
+	color: white;
+}
