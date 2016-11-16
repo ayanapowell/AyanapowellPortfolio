@@ -22,97 +22,29 @@ body {
   background-color: #E8E8E8;
 }
 
+
+p {
+	font-family: 'Muli', sans-serif;
+	color: #f2f2f2;
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	color: #f2f2f2;	
+	margin: 0;
+	padding: 0;
+}
+
 a {
 	text-decoration: none;
 }
 
- #wrapper {
- 	width: 100%;
- 	height: 800px;
- }
-
-/*------- Introduction ----*/
-.background_image {
+#wrapper {
 	width: 100%;
-	max-height: 800px;
 	height: 800px;
-	background: rgba(0, 0, 0, 0.6);
-	z-index: 1;
 }
 
-.background_image img {
-	position: absolute;
-	height: 800px;
-	-webkit-filter: blur(1px);
-	z-index: -1;
-}
-
-p {
-	font-family: 'Muli', sans-serif;
-	font-size: 1.3em;
-	font-weight: 100;
-	color: white;
-	position: absolute;
-	z-index: 4;
-}
-
-.link_1 {
-	display: inline-flex;
-	position: absolute;
-	margin-left: 86%;
-	margin-top: 25%;
-	z-index: 4;
-	width: 30%;
-}
-
-.link_2 {
-	display: inline-flex;
-	position: absolute;
-	margin-top: 25%;
-	margin-left: 5%;
-	margin-right: 25%;
-	z-index: 4;
-	width: 30%;
-}
-
-.link_1 a,
-.link_2 a {
-	color: #f2f2f2;
-}
-
-em {
-	color: #ff3333;
-}
-
-.title {
-	position: absolute;
-	font-family: 'Montserrat', sans-serif;
-	color: #f2f2f2;
-	z-index: 4;
-}
-
-h1.title {
-	margin-left: 27%;
-	margin-top: 22%;
-	font-size: 7.0em;
-	font-weight: 700;
-	letter-spacing: .5px;
-}
-
-h2.title {
-	margin-left: 5%;
-	margin-top: 10%;
-	font-size: 1.2em;
-	font-weight: 100;
-	letter-spacing: 1px;
-	line-height: 20px;
-	color: #ecf0f1;
-	font-weight: 100;
-}
-
-
-
-/* ---------- social icons ------ */
+ /* ---------- index-top-bar ------ */
 
 .icons {
 	position: absolute;
@@ -120,10 +52,6 @@ h2.title {
 	margin-left: 42%;
 	margin-top: 2%;
 	z-index: 5;
-}
-
-.icon a {
-	text-decoration: none;
 }
 
 .fa-envelope-o,
@@ -140,3 +68,178 @@ h2.title {
 .fa-facebook:hover {
 	color: white;
 }
+
+/*------- index-body ---- */
+.background-image {
+	width: 100%;
+	z-index: 1;
+	min-height: 900px;
+}
+
+.background-image img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	-webkit-filter: blur(1px);
+	z-index: -3;
+}
+
+.overlay {
+	z-index: 3;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+#index-body {
+	width: 100%;
+	top: 50%;
+	position: absolute;
+	z-index: 2;
+}
+
+h1.title {
+	font-size: 4.0em;
+	text-align: center;
+}
+
+#index-body a {
+	color: #ff3333;
+	font-style: italic;
+}
+
+#index-body p:last-of-type {
+	margin-top: 25px;
+	padding: 0;
+	font-size: 1.3em;
+	font-weight: 100;
+	z-index: 4;
+}
+
+.link-1 p {
+	text-align: right;	
+}
+
+.link-2 p {
+	text-align: left;
+}
+
+#index-body a:hover, #index-body span:hover {
+	text-decoration: none;
+	font-style: none;
+}
+
+/* ---------- index-footer --------- */
+#index-footer {
+	position: absolute;
+	height: 0px;
+	bottom: 0;
+	z-index: 2;
+	width: 100%;
+	padding: 0;
+}
+
+#index-footer p{
+	font-size: 1.1em;
+	font-style: italic;
+	margin-left: 42%;
+	color: #D0D0D0;
+}
+
+#index-footer a {
+	color: #D0D0D0;	
+}
+
+/* ------ media queries ------- */
+@media screen and (max-width: 375px) { /* galaxy */
+	    h1.title {
+    	position: absolute;
+    	bottom: 210px;
+    	margin-left: 50px !important;
+    	font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 450px) {
+		body, .background-image, #wrapper{
+			min-height: 740px; 
+			max-height: 440px;
+			overflow: hidden; 
+			overflow-y: scroll;
+		}
+
+    .icons {
+      margin: 0;
+      max-width: 100%;
+      padding-top: 35px;
+      overflow: hidden;
+    }
+
+    .icons:first-child {
+    	margin-left: 22%;
+    }
+
+    .link-1 p, .link-2 p {
+    	margin: 0 !important;
+    	padding: 0;
+    	padding-top: 0 !important;
+    	text-align: center !important;
+    	padding-bottom: 20px !important;
+    	max-width: 100%;
+    	overflow: hidden;
+    	font-size: 1em;
+    }
+
+   	.row {
+   		max-width: 100%;
+   		margin: 0 !important;
+   		/*overflow: hidden;*/
+   	}
+
+
+    #index-body span {
+    	font-size: 1.2em;
+    }
+
+    h1.title {
+    	position: absolute;
+    	/*margin: 0 !important;*/
+    	bottom: 210px;
+    	font-size: 2.5em;
+    }
+
+    h1.title:hover {
+    	font-style: italic;
+    }
+
+    #index-footer p {
+    	display: none;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+	body, .background-image, #wrapper{
+			min-height: 1024px; 
+			max-height: 1024px;
+			overflow: hidden; 
+	}
+
+	.icons {
+		margin-left: 36%;
+		padding-top: 45px;
+	}
+
+	#index-footer p {
+  	display: none;
+  }	
+
+ 	h1.title {
+		position: absolute;
+		/*margin: 0 !important;*/
+		margin-left: 35%;
+		font-size: 1.5em;
+  }
+} 
+
+
+
+
+
