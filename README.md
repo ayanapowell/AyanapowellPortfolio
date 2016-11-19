@@ -6,13 +6,13 @@
 
 ## Description
 
-_TThis is a webpage for Ayana Powell's code review at Epicodus. It will essentially be a portfolio about my current skill, and my goals for the coming months at Epicodus. It will contain HTML tag elements, bootstrap classes and custom stylesheet with cascading, box model and floats._
+_A portfolio for Ayana Powell._
 
 ## Setup/Installation Requirements
 
 * _Clone this repository_
     _To clone using Git, use the following terminal command:_
-    _git clone https://github.com/ayanapowell/code_review_1.git
+    _git clone https://github.com/ayanapowell/portfolio.git
 * _Open in text editor of your choice_
 
 ## Known Bugs
@@ -27,6 +27,9 @@ _You can reach us with feedback, questions, or bug reports at: ayanapowell1@gmai
 
 _HTML_
 _CSS_
+_Sass_
+_Javascript_
+_Jquery_
 _Bootstrap_
 
 ### License
