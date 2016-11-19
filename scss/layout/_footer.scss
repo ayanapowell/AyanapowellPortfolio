@@ -1,0 +1,18 @@
+#index-footer {
+  @extend %absolute !optional;
+  z-index: 2;
+  top: 95vh;
+  overflow: auto;
+  width: 100%;
+}
+
+#index-footer p {
+  font-size: 1.4rem;
+  font-style: italic;
+  margin-left: 42%;
+  color: $alto;
+}
+
+#index-footer a {
+  color: $alto; 
+}

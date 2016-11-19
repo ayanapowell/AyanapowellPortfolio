@@ -1,0 +1,49 @@
+#wrapper {
+  width: 100%;
+  height: 100vh;
+  background: url("https://s3-us-west-2.amazonaws.com/ayanareikapowell/project_4/arts/arts_house.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.top-nav {
+  display: inline-flex;
+  position: absolute;
+  right: 0;
+  padding-right: 10%;
+}
+
+.icons {
+  @extend %absolute;
+  right: 0;
+  top: 35vh;
+
+  @media #{$break-narrow} {
+    display: inline-flex;
+    top: 0;
+    left: 0;
+    width: 42%;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+}
+
+#index-body {
+  width: 100%;
+  top: 45vh;
+  @extend %absolute;
+  z-index: 2;
+}
+
+.about {
+  &-button {
+    position: relative;
+    padding-top: 0;
+    padding-left: 15%;
+  }
+  &-block {
+    // padding-left: 15%;
+  }
+}
+
+
+

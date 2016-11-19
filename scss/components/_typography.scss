@@ -1,0 +1,49 @@
+.index-body {
+  & h1 {
+    @include text($white, 3px);
+    @include font-size(110px);
+    margin: 0;
+    font-family: $limelight;
+    padding: 18% 15% 0 15%;
+  }
+
+  & h2 {
+    @include text($concrete, 1.7px);
+    @include font-size(33px);
+    font-family: $main;
+    padding: 30px 20px;
+    font-weight: 700;
+  }
+
+  & h3 {
+    @include text($concrete, 1.5px);
+    @include font-size(35px);
+    font-family: $main;
+    font-style: italic;
+    padding: 30px 15%;
+  }
+
+  & .about-button h4 {
+    @include text($white, 1.5px);
+    @include font-size(30px);
+    @extend %centered;
+    font-family: $main;
+    border: 1px solid $color-pop;
+    padding: 15px;
+    background-color: $color-pop;
+    width: 140px;
+    position: absolute;
+  }
+
+  @media #{$break-narrow} {
+    padding-top: 35%;;
+    text-align: center;
+  }
+
+}
+
+
+
+
+
+

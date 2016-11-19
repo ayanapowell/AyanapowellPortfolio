@@ -1,0 +1,31 @@
+.fa {
+  &-envelope-o,
+  &-github,
+  &-linkedin {
+    color: $alto;
+    padding: 20px 40px;
+    font-size: 3rem !important;
+  }
+
+  &-envelope-o:hover,
+  &-github:hover,
+  &-linkedin:hover {
+    color: $white;
+  }
+
+  &-long-arrow-right {
+    @extend %absolute;
+    z-index: 3;
+    font-size: 4em !important;
+    top: 10px;
+    left: 10%;
+  }
+}
+
+img.arrow-right {
+  @extend %absolute;
+  width: 3%;
+  padding-top: 18px;
+  margin-left: 8.7%;
+  z-index: 2;
+}

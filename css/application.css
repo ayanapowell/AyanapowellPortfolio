@@ -1,0 +1,163 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+img {
+  width: 100%;
+  /* We want the width to be 100% of the element its inside */
+  margin: 0 auto;
+  /*We set margin 0 auto on it, to always center it*/
+  object-fit: cover; }
+
+html, body {
+  height: 100%; }
+
+body {
+  text-rendering: optimizeLegibility !important;
+  background-color: #f2f2f2;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  outline: 0;
+  width: 100%; }
+
+p {
+  font-family: "Muli", sans-serif; }
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+.overlay {
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100vh;
+  z-index: -1; }
+
+#wrapper {
+  width: 100%;
+  height: 100vh;
+  background: url("https://s3-us-west-2.amazonaws.com/ayanareikapowell/project_4/arts/arts_house.jpg") no-repeat center;
+  background-size: cover; }
+
+.top-nav {
+  display: inline-flex;
+  position: absolute;
+  right: 0;
+  padding-right: 10%; }
+
+.icons {
+  right: 0;
+  top: 35vh; }
+  @media (max-width: 768px) {
+    .icons {
+      display: inline-flex;
+      top: 0;
+      left: 0;
+      width: 42%;
+      margin: 0 auto;
+      padding-top: 20px; } }
+
+#index-body {
+  width: 100%;
+  top: 45vh;
+  z-index: 2; }
+
+.about-button {
+  position: relative;
+  padding-top: 0;
+  padding-left: 15%; }
+
+#index-footer {
+  z-index: 2;
+  top: 95vh;
+  overflow: auto;
+  width: 100%; }
+
+#index-footer p {
+  font-size: 1.4rem;
+  font-style: italic;
+  margin-left: 42%;
+  color: #D0D0D0; }
+
+#index-footer a {
+  color: #D0D0D0; }
+
+.icons, #index-body, #index-footer, .fa-long-arrow-right, img.arrow-right {
+  position: absolute; }
+
+.index-body .about-button h4 {
+  text-align: center; }
+
+.fa-envelope-o, .fa-github, .fa-linkedin {
+  color: #D0D0D0;
+  padding: 20px 40px;
+  font-size: 3rem !important; }
+.fa-envelope-o:hover, .fa-github:hover, .fa-linkedin:hover {
+  color: #fff; }
+.fa-long-arrow-right {
+  z-index: 3;
+  font-size: 4em !important;
+  top: 10px;
+  left: 10%; }
+
+img.arrow-right {
+  width: 3%;
+  padding-top: 18px;
+  margin-left: 8.7%;
+  z-index: 2; }
+
+.index-body h1 {
+  color: #fff;
+  letter-spacing: 3px;
+  font-size: 110px;
+  font-size: 6.875rem;
+  margin: 0;
+  font-family: "Limelight", cursive;
+  padding: 18% 15% 0 15%; }
+.index-body h2 {
+  color: #f2f2f2;
+  letter-spacing: 1.7px;
+  font-size: 33px;
+  font-size: 2.0625rem;
+  font-family: "Cormorant Garamond", serif;
+  padding: 30px 20px;
+  font-weight: 700; }
+.index-body h3 {
+  color: #f2f2f2;
+  letter-spacing: 1.5px;
+  font-size: 35px;
+  font-size: 2.1875rem;
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  padding: 30px 15%; }
+.index-body .about-button h4 {
+  color: #fff;
+  letter-spacing: 1.5px;
+  font-size: 30px;
+  font-size: 1.875rem;
+  font-family: "Cormorant Garamond", serif;
+  border: 1px solid #ff3333;
+  padding: 15px;
+  background-color: #ff3333;
+  width: 140px;
+  position: absolute; }
+@media (max-width: 768px) {
+  .index-body {
+    padding-top: 35%;
+    text-align: center; } }
+
+/*# sourceMappingURL=application.css.map */

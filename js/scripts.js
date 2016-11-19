@@ -1,4 +1,4 @@
-$(document).ready(function() {
-  $('.background-image').wrap('<div class="overlay"></div>');
-});
+// $(document).ready(function() {
+//   $('#wrapper').wrap('<div class="overlay"></div>');
+// });
 

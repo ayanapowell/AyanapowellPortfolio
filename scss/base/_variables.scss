@@ -1,0 +1,44 @@
+// description color variables (from lightest - darkest)
+
+$white      : #fff;
+$concrete   : #f2f2f2; 
+$alto       : #D0D0D0;
+$black      : #000;
+$red-orange : #ff3333;
+
+
+// functional color variables
+
+$color-prim-dark  : lighten($black, 35%);
+$color-prim-light : $concrete;
+$color-main       : $white;
+$color-icons      : $alto;
+$color-pop        : $red-orange;
+
+
+// font stacks 
+
+$stack-sans-serif : sans-serif;
+$stack-muli       : 'Muli', $stack-sans-serif;
+$stack-montserrat : 'Montserrat', $stack-sans-serif; 
+$limelight: 'Limelight', cursive;
+$main: 'Cormorant Garamond', serif;
+
+
+// assets path - to implement interpolate the variable like so : #{$path-img}/image1.jpeg
+
+$path-img : '../img';
+
+
+// media query variables
+
+$break-narrow: '(max-width: 768px)';
+$break-wide : '(max-width: 1024px)';
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+// text mixin
+
+@mixin text($color:null, $letter-spacing:null) {
+  color: $color;
+  letter-spacing: $letter-spacing;
+}
+
+// font size mixin 
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+
+// media query mixin 
+
+// $break-narrow: max-width(768px);
+// $break-wide : max-width(1024px);
+
+// @mixin mobile {
+//   @media (max-width: $break-small) { @content; }
+// }
