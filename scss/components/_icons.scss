@@ -5,6 +5,7 @@
     color: $alto;
     padding: 20px 40px;
     font-size: 3rem !important;
+    @extend %pointer;
   }
 
   &-envelope-o:hover,

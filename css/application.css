@@ -102,6 +102,9 @@ a {
 .index-body .about-button h4 {
   text-align: center; }
 
+.about-button, .fa-envelope-o, .fa-github, .fa-linkedin, .index-body .top-nav h2 {
+  cursor: pointer; }
+
 .fa-envelope-o, .fa-github, .fa-linkedin {
   color: #D0D0D0;
   padding: 20px 40px;
@@ -128,7 +131,7 @@ img.arrow-right {
   margin: 0;
   font-family: "Limelight", cursive;
   padding: 18% 15% 0 15%; }
-.index-body h2 {
+.index-body .top-nav h2 {
   color: #f2f2f2;
   letter-spacing: 1.7px;
   font-size: 33px;
