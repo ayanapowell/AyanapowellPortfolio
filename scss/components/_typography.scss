@@ -1,13 +1,13 @@
-.index-body {
-  & h1 {
+.index {
+  &-body h1 {
     @include text($white, 3px);
     @include font-size(110px);
     margin: 0;
     font-family: $limelight;
-    padding: 18% 15% 0 15%;
+    padding: 13% 15% 0 15%;
   }
 
-  & .top-nav h2 {
+  &-body .top-nav h2 {
     @include text($concrete, 1.7px);
     @include font-size(33px);
     font-family: $main;
@@ -16,7 +16,7 @@
     @extend %pointer;
   }
 
-  & h3 {
+  &-body h3 {
     @include text($concrete, 1.5px);
     @include font-size(35px);
     font-family: $main;
@@ -24,23 +24,38 @@
     padding: 30px 15%;
   }
 
-  & .about-button h4 {
+  &-body .about-button h4 {
     @include text($white, 1.5px);
     @include font-size(30px);
     @extend %centered;
+    @extend %absolute;
     font-family: $main;
     border: 1px solid $color-pop;
     padding: 15px;
     background-color: $color-pop;
     width: 140px;
-    position: absolute;
   }
 
   @media #{$break-narrow} {
     padding-top: 35%;;
     text-align: center;
   }
+}
 
+.profile {
+  &-body h2 {
+    @include text($color-pop, 1.7px);
+    @include font-size(60px);
+    font-family: $limelight;
+  }
+  &-body p {
+    @include text($color-prim-dark, 1px);
+    @include font-size(25px);
+    font-family: $main;
+    line-height: 25px;
+    font-weight: 700;
+    padding: 0 20px;
+  }
 }
 
 

@@ -16,7 +16,8 @@ img {
   object-fit: cover; }
 
 html, body {
-  height: 100%; }
+  height: 100%;
+  overflow: hidden; }
 
 body {
   text-rendering: optimizeLegibility !important;
@@ -55,7 +56,6 @@ a {
 
 .top-nav {
   display: inline-flex;
-  position: absolute;
   right: 0;
   padding-right: 10%; }
 
@@ -76,10 +76,44 @@ a {
   top: 45vh;
   z-index: 2; }
 
+.toggled-body {
+  width: 93%;
+  margin-top: 100px;
+  z-index: 0; }
+
 .about-button {
   position: relative;
   padding-top: 0;
   padding-left: 15%; }
+
+#profile {
+  right: -300%;
+  width: 80%;
+  overflow: auto;
+  margin: 130px 10%;
+  z-index: 5;
+  overflow: hidden;
+  background-color: #D0D0D0; }
+
+.profile-body, .profile-image {
+  width: 50%;
+  overflow: hidden;
+  margin-top: 90px;
+  margin-bottom: 80px;
+  position: relative; }
+.profile-body {
+  padding-left: 50px;
+  padding-right: 50px;
+  float: left;
+  border-right: 1px solid #f2f2f2; }
+.profile-image img {
+  position: relative;
+  width: 80%;
+  margin-left: 10%;
+  height: 450px;
+  object-fit: cover;
+  border: 2px solid #f2f2f2;
+  padding: 2px; }
 
 #index-footer {
   z-index: 2;
@@ -96,13 +130,13 @@ a {
 #index-footer a {
   color: #D0D0D0; }
 
-.icons, #index-body, #index-footer, .fa-long-arrow-right, img.arrow-right {
+.top-nav, .icons, #index-body, .toggled-body, #profile, #index-footer, .fa-long-arrow-right, img.arrow-right, img.close, .index-body .about-button h4 {
   position: absolute; }
 
 .index-body .about-button h4 {
   text-align: center; }
 
-.about-button, .fa-envelope-o, .fa-github, .fa-linkedin, .index-body .top-nav h2 {
+.about-button, .fa-envelope-o:hover, .fa-github:hover, .fa-linkedin:hover, img.close, .index-body .top-nav h2 {
   cursor: pointer; }
 
 .fa-envelope-o, .fa-github, .fa-linkedin {
@@ -120,8 +154,14 @@ a {
 img.arrow-right {
   width: 3%;
   padding-top: 18px;
-  margin-left: 8.7%;
+  margin-left: 8.9%;
   z-index: 2; }
+
+img.close {
+  width: 2.5%;
+  z-index: 2;
+  right: 0;
+  margin: 30px; }
 
 .index-body h1 {
   color: #fff;
@@ -130,7 +170,7 @@ img.arrow-right {
   font-size: 6.875rem;
   margin: 0;
   font-family: "Limelight", cursive;
-  padding: 18% 15% 0 15%; }
+  padding: 13% 15% 0 15%; }
 .index-body .top-nav h2 {
   color: #f2f2f2;
   letter-spacing: 1.7px;
@@ -156,11 +196,26 @@ img.arrow-right {
   border: 1px solid #ff3333;
   padding: 15px;
   background-color: #ff3333;
-  width: 140px;
-  position: absolute; }
+  width: 140px; }
 @media (max-width: 768px) {
-  .index-body {
+  .index {
     padding-top: 35%;
     text-align: center; } }
+
+.profile-body h2 {
+  color: #ff3333;
+  letter-spacing: 1.7px;
+  font-size: 60px;
+  font-size: 3.75rem;
+  font-family: "Limelight", cursive; }
+.profile-body p {
+  color: #595959;
+  letter-spacing: 1px;
+  font-size: 25px;
+  font-size: 1.5625rem;
+  font-family: "Cormorant Garamond", serif;
+  line-height: 25px;
+  font-weight: 700;
+  padding: 0 20px; }
 
 /*# sourceMappingURL=application.css.map */

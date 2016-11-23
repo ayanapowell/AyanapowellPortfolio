@@ -3,11 +3,12 @@
   height: 100vh;
   background: url("https://s3-us-west-2.amazonaws.com/ayanareikapowell/project_4/arts/arts_house.jpg") no-repeat center;
   background-size: cover;
+  // transition: all 0.5s;
 }
 
 .top-nav {
+  @extend %absolute;
   display: inline-flex;
-  position: absolute;
   right: 0;
   padding-right: 10%;
 }
@@ -28,21 +29,63 @@
 }
 
 #index-body {
+  @extend %absolute;
   width: 100%;
   top: 45vh;
-  @extend %absolute;
   z-index: 2;
 }
 
+.toggled-body {
+  @extend %absolute;
+  width: 93%;
+  margin-top: 100px;
+  z-index: 0;
+}
 .about {
   &-button {
+    @extend %pointer;
     position: relative;
     padding-top: 0;
     padding-left: 15%;
-    @extend %pointer;
   }
   &-block {
     // padding-left: 15%;
+  }
+}
+
+#profile {
+  @extend %absolute;
+  right: -300%;
+  width: 80%;
+  overflow: auto;
+  margin: 130px 10%;
+  z-index: 5;
+  overflow: hidden;
+  background-color: $alto;
+}
+
+.profile {
+  &-body, &-image {
+    width: 50%;
+    overflow: hidden;
+    margin-top: 90px;
+    margin-bottom: 80px;
+    position: relative;
+  }
+  &-body {
+    padding-left: 50px;
+    padding-right: 50px;
+    float: left;
+    border-right: 1px solid $concrete;
+  }
+  &-image img {
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    height: 450px;
+    object-fit: cover;
+    border: 2px solid $concrete;
+    padding: 2px;
   }
 }
 
