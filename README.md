@@ -1,6 +1,4 @@
-# _Code Review_
-
-#### _Code Review for Epicodus, 8/5/2016_
+# _Portfolio Draft_
 
 #### By _**Ayana Powell**_
 
